@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import TaskItem from '../TaskItem/TaskItem.jsx';
 import './tasklist.css';
@@ -20,7 +20,7 @@ export default function TaskList({title, onAddTask, tasks, onTaskUpdate, onDelet
                     onDeleteTask={onDeleteTask}
                     />                    
                 })}
-                { tasks.length === 0 && <div className="empty-list">Lista Vazia</div> }
+                { tasks.length == 0 && <div className="empty-list">Lista Vazia</div> }
                 <button className='btn' onClick={addTask}>
                     <img src={plusIcon} alt="plus" />
                     Adicionar Tarefa

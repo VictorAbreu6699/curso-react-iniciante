@@ -18,7 +18,7 @@ export default function TaskItem({id, title, taskState, onTaskUpdate, onDeleteTa
     const onKeyPress = (event) => {
         if (event.key == "Enter") {
             setIsEditing(false)
-            if (editableTitle.length === 0) {
+            if (editableTitle.length == 0) {
                 onDeleteTask(id)
             }
         }
