@@ -1,0 +1,8 @@
+.task-item{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.task-item input{
+    text-align: center;
+}
